@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  background: #f9f9f9;
+}
+
+.column {
+  margin: 0;
+}
+
+.me {
+  width: 50px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.col {
+  display: flex;
+  flex: 1;
+}
+
+.col-left {
+  align-items: flex-end;
+  padding-right: 30px;
+}
+
+.col-left {
+  text-align: end;
+}
+
+.col-right {
+  border-left: 2px solid darkgrey;
+  padding-left: 30px;
+}
+
+.header {
+  background-color: #2a2c34;
+  color: white;
+  justify-content: center;
+}
+
+.contenu {
+  width: 850px;
+  margin: 0 auto;
+}
+.about {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.about h1 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+@media all and (max-width: 755px) {
+  .contenu {
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .col {
+    margin: 30px !important;
+  }
+
+  .col-left {
+    align-items: flex-start;
+  }
+
+  .col-left {
+    text-align: start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .col-right {
+    border-left: none;
+    margin: 0;
+    padding: 0;
+  }
+  .card {
+    width: -webkit-fill-available;
+  }
+}
+
+.card {
+  padding: 20px;
+  background-color: var(--block);
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  min-width: 300px;
+}
+
+.card h1 {
+  font-size: 1em;
+  font-family: "Roboto";
+  font-weight: 600;
+  color: var(--highlight-color);
+}
+
+.linkedn-logo {
+  width: 50px;
+}
